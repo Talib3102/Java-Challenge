@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class challenge30{
+    public static void main(String[] args){
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter number to print factorial :");
+      int num=sc.nextInt();
+      long sum=factorial(num);
+      System.out.println("the factorial of "+num+" is "+sum);
+    }
+    public static long factorial(int num){
+      long fact=1;
+      int i=2;
+      while(i<=num){
+        fact*=i;
+        i++;
+      }
+      return fact;
+    }
+}
